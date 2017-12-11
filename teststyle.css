@@ -2,10 +2,11 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Noto Sans";
+	background: #dddddd;
 }
 
 .main-div{
-	background: #dddddd;
+	background: none;
 	margin: 0;
 	padding-bottom: 50px;
 }
