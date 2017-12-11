@@ -1,122 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles/paraiso-dark.css">
-        <script src="highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-        </script>
-        <title>
-            untitled::blog::about::code
-        </title>
-    </head>
-    <body>
-        <div class="titlebar">untitled::blog::about::code</div>
-        <div class="post">
-            <h1>Let's Talk About Bubble Sort</h1>
-            <h2>11/6/2017</h2>
-            <p>
-                Sorting algorithms have a special place in my heart, they're
-                just so damn nifty and fun to do. The first I learned, and
-                probably the first you'd learn in a compsci class, was bubble
-                sort. It's a terrible algorithm when it comes to speed and power,
-                but it's simple enough that you can understand it in about 5
-                minutes.
-            </p>
-            <p>
-                The basic idea is this: you have a list of <i>n</i> items, and
-                for each item as you iterate along the list, you compare it to
-                the previous. If it's less than the previous, you swap the two,
-                while if it's larger (or equal, I suppose), you leave it be.
-                This is done repeatedly until a cycle runs with no swaps. In the
-                worst case scenario, the algorithm will loop once for each item,
-                and in the best case it'll loop once (i.e., you sent it a list
-                that's already solved <s>you dumb shit</s>).
-            </p>
-            <p>
-                A more programmatic way to look at it, there are two loops, each
-                one going over each element, so O(O(n)) or O(n^2). I have no clue
-                if O(O(n)) is actually a thing but it makes sense to me.
-            </p>
-            <p>
-                With that worthwhile explanation, how about we have some source
-                code! I'll just start out with some basic pseudocode:
-            </p>
-            <pre>
-                <code>
-sort(array) {
-    for n in array do {
-        for i from 1 length of array do {
-            if array[i] &lt; array[i - 1] then swap
-        }
-    }
-    return array
-}
-                </code>
-            </pre>
-            <p>
-                Simple, right? Pretty clear to see why it's inneffecient; it has
-                to loop over everything repeatedly. If you're a professional don't
-                do a bubble sort.
-            </p>
-            <p>
-                <s>I'm going to do a little experiment about it's inneffeciency with
-                the following C++ code:</s> as it turns out compilers are <i>really</i>
-                smart and it can tell that I'm trying to write something inneffecient
-                and automatically converts it to another algorithm, don't know which.
-                That's both really cool and really annoying. I don't know how to
-                disable these optimizations.
-            </p>
-            <p>
-                <i>To be continued when I figure that out...</i>
-            </p>
-        </div>
-        <div class="post">
-            <h1>Let's Talk About Coding</h1>
-            <h2>11/5/2017</h2>
-            <p>
-                On this day 10 minutes ago, I started a blog that I hope to dedicate to programming. 
-                I'm going to be honest, I like to code. I think it's some really fun stuff to do. I
-                don't really understand it all, but I try. Perhaps through this blog I'll gain a further
-                understanding of the art, and improve all the projects I forget I've dedicated myself to.
-            </p>
-            <p>
-                First things first, I know a bit of C++. I consider that by and far my favorite language
-                to program in, and I'll probably post a bunch using it. My understanding is that C++ is
-                not accepted by certain individuals who call it "too bulky," "unnecessary", and "ugly"
-                - amongst other things. Now that's just real damn rude, don't you think? It's a perfectly
-                valid language. It's got all the cool things these days, like lambdas and garbage collection
-                (shared pointers) and dynamic allocation and whatever else the current hipster language
-                is doing. And besides - what kind of argument is "ugly"? It's a programming language. If
-                you're in the discipline for the aesthetic value you're doing it wrong.
-            </p>
-            <p>
-                I also know Java, learned it before C++. I mess around in Lua on occasion. Overall not too
-                shabby for a beginner. Doesn't mean I'm an expert in any, but you find far too many blogs
-                with people who are god damn experts in their language and you're like "well wtf I don't
-                understand half these things" and I think having a blog by someone who <i>almost</i> knows
-                what they're doing is a big help.
-            </p>
-            <p>
-                That's my philosophy and I'm sticking to it. I'll try and post once a day.
-            </p>
-        </div>
-        <div class="post">
-            <h1>first post</h1>
-            <h2>11/5/2017</h2>
-            <p>Hello World</p>
-            <p>The following is a test at syntax highlighting:</p>
-            <pre>
-                <code class="c++">
-#include&lt;iostream&gt;
-                        
-int main(void){
-    std::cout &lt;&lt; "Hello, world!" &gt;&gt; std::endl;
-    return 0;
-}
-                </code>
-            </pre>
-        </div>
-    </body>
-</html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Quiz on Important Facts</h1>
+	<div class="quiz-container">
+	<div id="quiz"></div>
+	</div>
+	<button id="next">Continue</button>
+	<button id="submit">Submit</button>
+	<div id="results"></div>
+	<script  src="lesson.js"></script>
+</body>
