@@ -1,0 +1,243 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Noto Sans";
+}
+
+.main-div{
+	width: 100%;
+	height: 100%;
+	background: #dddddd;
+	margin: 0;
+}
+.question-div{
+	max-width: 500px;
+	width: calc(100% - 20px);
+	background: #ffffff;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.answers label input[type="text"] {
+	border: none;
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+}
+
+.answers {
+	width: 100%;
+}
+
+.answers label{
+	display: block;
+	margin:10px;
+	border: solid #eeeeee 2px;
+	border-radius: 20px;
+	padding: 5px;
+	width: auto;
+	max-height: 200px;
+  }
+
+#slide-footer {
+	padding: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	overflow: auto;
+	background-color: #66023C;
+}
+
+.instruction{
+	color: #dddddd;
+}
+
+
+#nav-bar {
+	overflow: auto;
+	padding: 10px;
+	padding-left: 30px;
+	width: auto;
+	background-color: #66023C;
+	color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+	margin: 0;
+}
+
+#progress-bar {
+	height: 5px;
+	width:100%;
+	background-color: #00ff00;
+}
+
+#next, #submit, #return {
+	border:none;
+	background-color: rgb(175, 91, 141);
+	color: #66023C;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
+	padding: 10px;
+    text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 700;
+    font-size: 15px;
+	border-radius: 20px;
+}
+
+#next:hover, #submit:hover, #return:hover {
+	background-color: rgb(219, 180, 204);
+	color: #66023C;
+}
+
+#quiz-notes {
+	float: left;
+	display: inline-block;
+	color: #ffffff99;
+}
+
+#quiz-buttons {
+	align-self: auto;
+	float: right;
+	display: inline-block;
+}
+
+.question {
+	font-weight: 800;
+	font-size: 28;
+}
+
+.slide{
+	display: none;
+	padding: 30px;
+	width: calc(100% - 60px);
+  }
+  .active-slide{
+	  display: inline-block;
+  }
+
+  
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px dotted black;
+}
+
+.tooltip .tooltip-text {
+	visibility: hidden;
+    background-color: black;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 4px;
+	padding: 10px;
+    position: absolute;
+    z-index: 1;
+	top: 150%;
+	width: 200px;
+	left: 50%;
+	margin-left: -110px;
+	font-weight: 400;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: 800;
+	margin: 0;
+	padding-bottom: 15px;
+    border-bottom: 1px dotted white;
+}
+
+.new-word {
+	color: goldenrod;
+    border-bottom: 4px dotted goldenrod;
+}
+
+img {
+	width: 30%;
+	margin: -5px;
+	float: right;
+}
+
+label {
+	height: auto;
+	overflow: auto;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 400;
+	margin: 15px;
+}
+
+#tree {
+	padding: 15px;
+}
+
+.tree-box {
+	text-decoration: none;
+	background-color: #fff;
+	padding: 35px 0;
+	display: inline-block;
+	margin: 15px;
+	width: calc(50% - 30px);
+	height: auto;
+	border-radius: 20px;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	overflow: hidden;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tree-available {
+	background-color: #ccffcc !important;
+}
+
+a.tree-box:hover {
+	border-radius: 0px;
+}
+
+.progress {
+	background-color: #00ff00;
+	height: 5px;
+	width: 100%;
+	margin-top: -35px;
+}
+
+.tree-label {
+	width: calc(100% - 10px);
+	background-color: #66023C;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 800;
+	padding: 5px;
+}
