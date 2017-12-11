@@ -402,7 +402,7 @@ const lessons = [
 				],
 			  type: "text",
 			  correctAnswers: [
-				  "it{'s| is} {the |}water"
+				  "it{s|'s| is} {the |}water"
 			  ]
 			},
 			{
