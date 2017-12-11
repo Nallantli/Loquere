@@ -545,6 +545,7 @@ const lessons = [
 					"aquam"
 				],
 				correctAnswers: [
+					"I drink water",
 					"aquam"
 				]
 			},
@@ -561,6 +562,7 @@ const lessons = [
 					"aquam"
 				],
 				correctAnswers: [
+					"The water is here",
 					"aqua"
 				]
 			},
@@ -603,6 +605,7 @@ const lessons = [
 				  "pueros"
 			  ],
 			  correctAnswers: [
+				  "The boys are here",
 				  "pueri"
 			  ]
 			},

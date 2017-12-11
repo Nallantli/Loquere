@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Noto Sans";
+	font-family: "Source Sans Pro";
 	background: #dddddd;
 }
 
@@ -53,6 +53,7 @@ body {
   }
 
 #slide-footer {
+	clear: left;
 	padding: 15px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -66,10 +67,9 @@ body {
 
 
 #nav-bar {
-	overflow: auto;
-	padding: 10px;
-	padding-left: 30px;
 	width: auto;
+	height:50px;
+	padding: 5px;
 	background-color: #66023C;
 	color: #ffffff;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
@@ -77,6 +77,7 @@ body {
 
 h1 {
 	margin: 0;
+	padding: 0;
 }
 
 #progress-bar {
@@ -94,8 +95,8 @@ h1 {
     text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-weight: 700;
-    font-size: 15px;
+	font-weight: 800;
+	font-size: 15px;
 	border-radius: 20px;
 }
 
@@ -187,10 +188,25 @@ h2 {
     border-bottom: 4px dotted goldenrod;
 }
 
-img {
+label >img {
 	width: 30%;
 	margin: -5px;
 	float: right;
+}
+
+.nav-block {
+	float: left;
+	display: inline-block;
+	height: 100%;
+}
+
+.nav-block > h1 {
+	font-size: 46px;
+	margin-top: -5px;
+}
+
+.nav-icon {
+	height: 50px;
 }
 
 label {
@@ -211,12 +227,13 @@ h3 {
 .tree-box {
 	text-decoration: none;
 	background-color: #fff;
-	padding: 35px 0;
+	padding:0;
 	display: inline-block;
+	float:left;
 	margin: 15px;
-	width: calc(50% - 30px);
+	padding: 10px;
+	width: calc(50% - 50px);
 	height: auto;
-	border-radius: 20px;
 	text-align: center;
 	color: #000000;
 	font-size: 14px;
@@ -233,22 +250,26 @@ h3 {
 }
 
 a.tree-box:hover {
-	border-radius: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 100px 0 rgba(0, 0, 0, 0.19),0px 0px 0px 10px gold;
 }
 
 .progress {
 	background-color: #00ff00;
 	height: 5px;
-	width: 100%;
-	margin-top: -35px;
+	margin-top:10px;
+	margin-bottom: -10px;
+	margin-left: -10px;
 }
 
 .tree-label {
-	width: calc(100% - 10px);
+	width: calc(100% + 10px);
 	background-color: #66023C;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 800;
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-bottom: 10px;
 	padding: 5px;
 }
 

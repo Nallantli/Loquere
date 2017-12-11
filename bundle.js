@@ -17568,7 +17568,7 @@ module.exports = require('./Spinner');
 		if (userAnswer !== undefined && userAnswer !== "")
 		{
 			numOfTotalAnswered++;
-			document.getElementById("quiz-notes").innerHTML = "<b>Correct: " + currentQuestion.correctAnswers[0] + "</b><br>Input: " + userAnswer;
+			document.getElementById("quiz-notes").innerHTML = "<b>Translation: " + currentQuestion.correctAnswers[0] + "</b><br>Input: " + userAnswer;
 
 			if (currentQuestion.correctAnswers.includes(userAnswer.toLowerCase())) {
 				slideFooter.style.backgroundColor = "#14DC3C";
@@ -17599,6 +17599,9 @@ module.exports = require('./Spinner');
 				nextButton.style.display = "none";
 				returnButton.style.display = "inline-block";
 				localStorage.setItem(lessons[index].id, score);
+				if (index === lessons.length - 1 && score > 0.75){
+					localStorage.setItem(id, 1);
+				}
 			}
 		}else if (currentSlide + 1 < numOfQuestions) {
 			showSlide(currentSlide + 1);

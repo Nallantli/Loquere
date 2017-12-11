@@ -331,5 +331,63 @@ const dictionary = {
 				"their (own)",
 				"'Suus' differs from 'eius' in that it refers to the subject of the sentence as the owner (reflexive pronoun)"
 			]
+		},
+		"salve":{
+			dict: "Salve! (sg)",
+			english: [
+				"Hello!",
+				"Hi!",
+				"Greetings!",
+				"Welcome!"
+			]
+		},
+		"quid agis":{
+			dict: "Quid agis? (sg)",
+			english: [
+				"What's up?",
+				"How's it going?",
+				"How are you?"
+			]
+		},
+		"quid agitis":{
+			dict: "Quid agitis? (pl)",
+			english: [
+				"How are you all?"
+			]
+		},
+		"valeo":{
+			dict: "Valeo! (sg)",
+			english: [
+				"I'm well!",
+				"I'm fine!",
+				"I'm good!"
+			]
+		},
+		"vale":{
+			dict: "Vale! (sg)",
+			english: [
+				"Goodbye!"
+			]
+		},
+		"valete":{
+			dict: "Valete! (pl)",
+			english: [
+				"Goodbye!"
+			]
+		},
+		"valemus":{
+			dict: "Valemus! (pl)",
+			english: [
+				"We're well!",
+				"We're fine!",
+				"We're good!"
+			]
+		},
+		"nomen mihi est":{
+			dict: "Nomen mihi est ...",
+			english: [
+				"My name is ...",
+				"I am called ..."
+			]
 		}
 	};

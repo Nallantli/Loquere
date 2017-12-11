@@ -1,0 +1,50 @@
+var treeData = [
+	{
+		"id":"cat0",
+		"title":"Basics 1",
+		"newtier":false,
+		"color":"#ff2222",
+		"prerequisites":[]
+	},
+	{
+		"id":"cat1",
+		"title":"Basics 2",
+		"newtier":true,
+		"color":"#ff2222",
+		"prerequisites":[
+			"cat0",
+			"NIL"
+		]
+	},
+	{
+		"id":"cat2",
+		"title":"Phrases",
+		"newtier":false,
+		"color":"#2222ff",
+		"prerequisites":[
+			"cat0"
+		]
+	},
+	{
+		"id":"cat3",
+		"title":"Food",
+		"newtier":true,
+		"color":"#22ff22",
+		"prerequisites":[
+			"cat1",
+			"cat2",
+			"NIL"
+		]
+	},
+	{
+		"id":"cat4",
+		"title":"Animals",
+		"newtier":false,
+		"color":"#ff8822",
+		"prerequisites":[
+			"cat1",
+			"cat2",
+			"NIL"
+		]
+	}
+];
