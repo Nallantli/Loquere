@@ -508,12 +508,12 @@ const lessons = [
 			  instructions: "Translate the sentence",
 			  question: [
 				  ["Carnem","caro"],[" ","NIL"],
-				  ["non","non"],
+				  ["non","non"],[" ","NIL"],
 				  ["edo","edo"]
 				],
 			  type: "text",
 			  correctAnswers: [
-				"I {don't eat|am not eating} {the |}meat"
+				"i {don't eat|am not eating} {the |}meat"
 			  ]
 			}
 		  ]
