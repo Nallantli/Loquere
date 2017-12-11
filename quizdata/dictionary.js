@@ -68,6 +68,13 @@ const dictionary = {
 				"you (pl) are"
 			]
 		},
+		"sunt":{
+			dict: "sum, esse, fui, futurus",
+			english: [,
+				"are",
+				"they are"
+			]
+		},
 		"non":{
 			dict: "non",
 			english: [
@@ -232,6 +239,14 @@ const dictionary = {
 				"you all are eating"
 			]
 		},
+		"bibo":{
+			dict: "bibo, bibere, bibi, bibitum",
+			english: [
+				"drink",
+				"I drink",
+				"I am drinking"
+			]
+		},
 		"bibit":{
 			dict: "bibo, bibere, bibi, bibitum",
 			english: [
@@ -262,6 +277,59 @@ const dictionary = {
 				"drink",
 				"they drink",
 				"they are drinking"
+			]
+		},
+		"hic_adv":{
+			dict: "hic",
+			english: [
+				"here",
+				"at this place"
+			]
+		},
+		"amat":{
+			dict: "amo, amare, amavi, amatum",
+			english: [
+				"loves",
+				"he/she/it loves",
+				"he/she/it is loving"
+			]
+		},
+		"quoque":{
+			dict: "quoque",
+			english: [
+				"also",
+				"likewise",
+				"too"
+			]
+		},
+		"amicus":{
+			dict: "amicus, -i (m)",
+			english: [
+				"friend (male)"
+			]
+		},
+		"amica":{
+			dict: "amica, -ae (f)",
+			english: [
+				"friend (female)"
+			]
+		},
+		"eius":{
+			dict: "is, ea, id",
+			english: [
+				"his",
+				"her",
+				"its"
+			]
+		},
+		"suus":{
+			dict: "suus, sua, suum",
+			english: [
+				"his (own)",
+				"her (own)",
+				"its (own)",
+				"their (own)",
+				"'Suus' differs from 'eius' in that it refers to the subject of the sentence as the owner (reflexive pronoun)"
 			]
 		}
 	};

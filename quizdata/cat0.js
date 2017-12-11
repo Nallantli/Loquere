@@ -20,12 +20,12 @@ const lessons = [
 				  ["Man","vir"]
 				],
 			  type: "radio",
-			  choices: {
-				  "vir":"images/vir.png",
-				  "femina":"images/femina.png",
-				  "puer":"images/puer.png",
-				  "puella":"images/puella.png"
-			  },
+			  choices: [
+				  ["vir","images/vir.png"],
+				  ["femina","images/femina.png"],
+				  ["puer","images/puer.png"],
+				  ["puella","images/puella.png"]
+			  ],
 			  correctAnswers: [
 				  "vir"
 			  ]
@@ -36,12 +36,12 @@ const lessons = [
 				  ["Woman","femina"]
 			  ],
 			  type: "radio",
-			  choices: {
-				  "vir":"images/vir.png",
-				  "femina":"images/femina.png",
-				  "puer":"images/puer.png",
-				  "puella":"images/puella.png"
-			  },
+			  choices: [
+				  ["vir","images/vir.png"],
+				  ["femina","images/femina.png"],
+				  ["puer","images/puer.png"],
+				  ["puella","images/puella.png"]
+			  ],
 			  correctAnswers: [
 				  "femina"
 			  ]
@@ -52,12 +52,12 @@ const lessons = [
 				  ["Boy","puer"]
 			  ],
 			  type: "radio",
-			  choices: {
-				  "vir":"images/vir.png",
-				  "femina":"images/femina.png",
-				  "puer":"images/puer.png",
-				  "puella":"images/puella.png"
-			  },
+			  choices: [
+					["vir","images/vir.png"],
+					["femina","images/femina.png"],
+			  		["puer","images/puer.png"],
+					["puella","images/puella.png"]
+			  ],
 			  correctAnswers: [
 				  "puer"
 			  ]
@@ -68,12 +68,12 @@ const lessons = [
 				  ["Girl","puella"]
 			  ],
 			  type: "radio",
-			  choices: {
-				  "vir":"images/vir.png",
-				  "femina":"images/femina.png",
-				  "puer":"images/puer.png",
-				  "puella":"images/puella.png"
-			  },
+			  choices: [
+				["vir","images/vir.png"],
+				["femina","images/femina.png"],
+				  ["puer","images/puer.png"],
+				["puella","images/puella.png"]
+		  ],
 			  correctAnswers: [
 				  "puella"
 			  ]
@@ -356,12 +356,12 @@ const lessons = [
 				["Fruit","fructus"],[" ","NIL"]
 			  ],
 			  type: "radio",
-			  choices: {
-				  "malum":"images/malum.jpg",
-				  "fructus":"images/fructus.jpg",
-				  "panis":"images/panis.jpg",
-				  "caro":"images/caro.jpg"
-			  },
+			  choices: [
+				  ["malum","images/malum.jpg"],
+				  ["fructus","images/fructus.jpg"],
+				  ["panis","images/panis.jpg"],
+				  ["caro","images/caro.jpg"]
+			],
 			  correctAnswers: [
 				  "fructus"
 			  ]
@@ -372,12 +372,12 @@ const lessons = [
 				["Bread","panis"],[" ","NIL"]
 			  ],
 			  type: "radio",
-			  choices: {
-				  "malum":"images/malum.jpg",
-				  "fructus":"images/fructus.jpg",
-				  "panis":"images/panis.jpg",
-				  "caro":"images/caro.jpg"
-			  },
+			  choices: [
+				["malum","images/malum.jpg"],
+				["fructus","images/fructus.jpg"],
+				["panis","images/panis.jpg"],
+				["caro","images/caro.jpg"]
+		  ],
 			  correctAnswers: [
 				  "panis"
 			  ]
@@ -437,12 +437,12 @@ const lessons = [
 					["Meat","caro"],[" ","NIL"]
 				  ],
 				  type: "radio",
-				  choices: {
-					  "malum":"images/malum.jpg",
-					  "fructus":"images/fructus.jpg",
-					  "panis":"images/panis.jpg",
-					  "caro":"images/caro.jpg"
-				  },
+				  choices: [
+					["malum","images/malum.jpg"],
+					["fructus","images/fructus.jpg"],
+					["panis","images/panis.jpg"],
+					["caro","images/caro.jpg"]
+			  ],
 				  correctAnswers: [
 					  "caro"
 				  ]
@@ -517,5 +517,177 @@ const lessons = [
 			  ]
 			}
 		  ]
+	},
+	{
+		"id":"lesson0_3",
+		"title":"Accusative",
+		"teachingWords":[
+			"bibo",
+			"hic",
+			"quoque",
+			"sunt",
+			"amici",
+			"amica",
+			"eius",
+			"suam"
+		],
+		"quiz":[
+			{
+				instructions: "Choose the correct form",
+				question: [
+					["Ego","ego"],[" ","NIL"],
+					["DROP","DROP"],[" ","NIL"],
+					["bibo","bibo"]
+			  	],
+				type: "drop-down",
+				choices: [
+					"aqua",
+					"aquam"
+				],
+				correctAnswers: [
+					"aquam"
+				]
+			},
+			{
+				instructions: "Choose the correct form",
+				question: [
+					["Hic","hic_adv"],[" ", "NIL"],
+					["DROP","DROP"],[" ","NIL"],
+					["est","est"]
+			  	],
+				type: "drop-down",
+				choices: [
+					"aqua",
+					"aquam"
+				],
+				correctAnswers: [
+					"aqua"
+				]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Vir","vir"],[" ","NIL"],
+				  ["feminam","femina"],[" ","NIL"],
+				  ["amat","amat"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"{the|a} man {loves|is loving} {a|the} woman"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Femina","femina"],[" ","NIL"],
+				  ["virum","vir"],[" ","NIL"],
+				  ["quoque","quoque"],[" ","NIL"],
+				  ["amat","amat"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"{the|a} woman {loves|is loving} {a|the} man {too|also}",
+				"{the|a} woman also {loves|is loving} {a|the} man"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["DROP","DROP"],[" ","NIL"],
+				  ["hic","hic_adv"],[" ","NIL"],
+				  ["sunt","sunt"]
+				],
+			  type: "drop-down",
+			  choices: [
+				  "pueri",
+				  "pueros"
+			  ],
+			  correctAnswers: [
+				  "pueri"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Femina","femina"],[" ","NIL"],
+				  ["pueros","puer"],[" ","NIL"],
+				  ["amat","amat"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"{the|a} woman {loves|is loving} {the |}boys",
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Puer","puer"],[" ","NIL"],
+				  ["et","et"],[" ","NIL"],
+				  ["puella","puella"],[" ","NIL"],
+				  ["amici","amicus"],[" ","NIL"],
+				  ["sunt","sunt"],[" ","NIL"],
+				],
+			  type: "text",
+			  correctAnswers: [
+				"{the|a} boy and {the |a |}girl are friends",
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Ea","ea"],[" ","NIL"],
+				  ["amica","amica"],[" ","NIL"],
+				  ["eius","eius"],[" ","NIL"],
+				  ["est","est"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "she is {his|her|its} friend",
+				  "she is {a|the} friend of {his|hers|it}"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Ea","ea"],[" ","NIL"],
+				  ["amicam","amica"],[" ","NIL"],
+				  ["suam","suus"],[" ","NIL"],
+				  ["amat","est"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "she {loves|is loving} her friend",
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Who","quis"],[" ","NIL"],
+				  ["is","est"],[" ","NIL"],
+				  ["her","eius"],[" ","NIL"],
+				  ["friend","amicus"],["?","NIL"],
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "{quis|quae} amica eius est{?|}",
+				  "{quis|quae} eius amica est{?|}",
+				  "{quis|quae} est amica eius{?|}",
+				  "{quis|quae} est eius amica{?|}",
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Ea","ea"],[" ","NIL"],
+				  ["amica","amica"],[" ","NIL"],
+				  ["sua","suus"],[" ","NIL"],
+				  ["est","est"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "she is her own friend",
+			  ]
+			}
+		]
 	}
 ];

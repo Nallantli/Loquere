@@ -277,3 +277,9 @@ hr {
 	border-width: 1px;
 	border-color: #ffffff22;
 } 
+
+.drop-down, select {
+	font-size: 28px;
+	border: none;
+	font-weight: 800;
+}

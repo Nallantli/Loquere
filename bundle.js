@@ -17408,35 +17408,79 @@ module.exports = require('./Spinner');
 			  // ...add an HTML radio button
 			  answers.push(
 				`<label>
-				   <input type="radio" name="question${questionNumber}" value="${letter}">
-				   <img src="${currentChoices[letter]}"></img>
-				   <h3>${letter}</h3>
+				   <input type="radio" name="question${questionNumber}" value="${currentChoices[letter][0]}">
+				   <img src="${currentChoices[letter][1]}"></img>
+				   <h3>${currentChoices[letter][0]}</h3>
 				 </label>`
 			  );
 			}
+		}else if (currentQuestion.type === "drop-down"){
+			let currentChoices = currentQuestion.choices;
+			shuffleArray(currentChoices);
+			answers.push(`<div class="drop-down">`);
+			for (index in currentQuestion.question){
+				if (currentQuestion.question[index][0] === "DROP"){
+					answers.push(`<select name="question${questionNumber}">`);
+					for (letter in currentChoices) {
+						// ...add an HTML radio button
+						answers.push(
+							`<option value="${currentChoices[letter]}">
+							${currentChoices[letter]}
+							</option>`
+						);
+					}
+					answers.push(`</select>`);
+				}else{
+					let questionDiv = ``;
+					var value = currentQuestion.question[index][0];
+					var entry = currentQuestion.question[index][1];
+					console.log(value);
+					var dictionaryEntry = dictionary[entry];
+					if (dictionaryEntry === undefined){
+						questionDiv = questionDiv + `${value}`;				
+					}else{
+						var translations = dictionaryEntry.english;
+						var englishSection = ``;
+						for (var t in translations){
+							englishSection+=`<br>` + translations[t];
+						}
+						var reference = `<h2>${dictionaryEntry.dict}</h2>${englishSection}`;
+						if (learned.includes(value.toLowerCase()) || !teachingWords.includes(value.toLowerCase())){
+							questionDiv = questionDiv + `<div class="tooltip">${value}<span class="tooltip-text">${reference}</span></div>`;
+						}else if (teachingWords.includes(value.toLowerCase())){
+							questionDiv = questionDiv + `<div class="tooltip new-word">${value}<span class="tooltip-text">${reference}</span></div>`;
+							learned.push(value.toLowerCase());				
+						}
+					}
+					answers.push(questionDiv);
+				}
+			}
+			answers.push(`</div>`)
 		}
   
 		// add this question and its answers to the output
 		let questionDiv = ``;
-		for (var index in currentQuestion.question) {
-			var value = currentQuestion.question[index][0];
-			var entry = currentQuestion.question[index][1];
-			console.log(value);
-			var dictionaryEntry = dictionary[entry];
-			if (dictionaryEntry === undefined){
-				questionDiv = questionDiv + `${value}`;				
-			}else{
-				var translations = dictionaryEntry.english;
-				var englishSection = ``;
-				for (var t in translations){
-					englishSection+=`<br>` + translations[t];
-				}
-				var reference = `<h2>${dictionaryEntry.dict}</h2>${englishSection}`;
-				if (learned.includes(value.toLowerCase()) || !teachingWords.includes(value.toLowerCase())){
-					questionDiv = questionDiv + `<div class="tooltip">${value}<span class="tooltip-text">${reference}</span></div>`;
-				}else if (teachingWords.includes(value.toLowerCase())){
-					questionDiv = questionDiv + `<div class="tooltip new-word">${value}<span class="tooltip-text">${reference}</span></div>`;
-					learned.push(value.toLowerCase());				
+		if (currentQuestion.type !== "drop-down"){
+			for (var index in currentQuestion.question) {
+				var value = currentQuestion.question[index][0];
+				var entry = currentQuestion.question[index][1];
+				console.log(value);
+				var dictionaryEntry = dictionary[entry];
+				if (dictionaryEntry === undefined){
+					questionDiv = questionDiv + `${value}`;				
+				}else{
+					var translations = dictionaryEntry.english;
+					var englishSection = ``;
+					for (var t in translations){
+						englishSection+=`<br>` + translations[t];
+					}
+					var reference = `<h2>${dictionaryEntry.dict}</h2>${englishSection}`;
+					if (learned.includes(value.toLowerCase()) || !teachingWords.includes(value.toLowerCase())){
+						questionDiv = questionDiv + `<div class="tooltip">${value}<span class="tooltip-text">${reference}</span></div>`;
+					}else if (teachingWords.includes(value.toLowerCase())){
+						questionDiv = questionDiv + `<div class="tooltip new-word">${value}<span class="tooltip-text">${reference}</span></div>`;
+						learned.push(value.toLowerCase());				
+					}
 				}
 			}
 		}
@@ -17517,6 +17561,8 @@ module.exports = require('./Spinner');
 			selector = `input[name=question${currentSlide}]:checked`;
 		}else if (currentQuestion.type === "text") {
 			selector = `input[name=question${currentSlide}]`;
+		}else if (currentQuestion.type == "drop-down"){
+			selector = `select[name=question${currentSlide}]`;
 		}
 		const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 		if (userAnswer !== undefined && userAnswer !== "")
