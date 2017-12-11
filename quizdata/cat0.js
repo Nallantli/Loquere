@@ -182,7 +182,8 @@ const lessons = [
 			"sumus",
 			"estis",
 			"filii",
-			"ita"
+			"ita",
+			"malum"
 		],
 		"quiz":[
 			{
@@ -323,6 +324,196 @@ const lessons = [
 			  correctAnswers: [
 				  "{ea |}est puella",
 				  "{ea |}puella est",
+			  ]
+			}
+		  ]
+	},
+	{
+		"id":"lesson0_2",
+		"title":"Basic Verbs",
+		"teachingWords":[
+			"edo",
+			"cattus",
+			"aqua",
+			"bibit",
+			"canis",
+			"edis",
+			"bibunt",
+			"editis",
+			"mali",
+			"edimus",
+			"bibimus",
+			"bibitis",
+			"caro",
+			"panis",
+			"fructus",
+			"carnem"
+		],
+		"quiz":[
+			{
+			  instructions: "Choose the proper translation",
+			  question: [
+				["Fruit","fructus"],[" ","NIL"]
+			  ],
+			  type: "radio",
+			  choices: {
+				  "malum":"images/malum.jpg",
+				  "fructus":"images/fructus.jpg",
+				  "panis":"images/panis.jpg",
+				  "caro":"images/caro.jpg"
+			  },
+			  correctAnswers: [
+				  "fructus"
+			  ]
+			},
+			{
+			  instructions: "Choose the proper translation",
+			  question: [
+				["Bread","panis"],[" ","NIL"]
+			  ],
+			  type: "radio",
+			  choices: {
+				  "malum":"images/malum.jpg",
+				  "fructus":"images/fructus.jpg",
+				  "panis":"images/panis.jpg",
+				  "caro":"images/caro.jpg"
+			  },
+			  correctAnswers: [
+				  "panis"
+			  ]
+			},
+			{
+				instructions: "Translate the sentence",
+			  question: [
+				  ["Ego","ego"],[" ","NIL"],
+				  ["malum","malum"],[" ","NIL"],
+				  ["edo","edo"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "i{{'m| am} eating| eat} {an|the} apple"
+			  ]
+			},
+			{
+				instructions: "Translate the sentence",
+			  question: [
+				  ["Est","est"],[" ","NIL"],
+				  ["aqua","aqua"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "it{'s| is} {the |}water"
+			  ]
+			},
+			{
+				instructions: "Translate the sentence",
+				question: [
+					["Cattus","cattus"],[" ","NIL"],
+					["aquam","aqua"],[" ","NIL"],
+					["bibit","bibit"]
+				  ],
+				type: "text",
+				correctAnswers: [
+					"{a|the} cat {is drinking|drinks} {the |}water"
+				]
+			  },
+			  {
+				  instructions: "Translate the sentence",
+				  question: [
+					  ["Cattus","cattus"],[" ","NIL"],
+					  ["et","et"],[" ","NIL"],
+					  ["canis","canis"],[" ","NIL"],
+					  ["aquam","aqua"],[" ","NIL"],
+					  ["bibunt","bibunt"]
+					],
+				  type: "text",
+				  correctAnswers: [
+					  "{a|the} cat and {a |the |}dog {are drinking|drink} {the |}water"
+				  ]
+				},
+				{
+				  instructions: "Choose the proper translation",
+				  question: [
+					["Meat","caro"],[" ","NIL"]
+				  ],
+				  type: "radio",
+				  choices: {
+					  "malum":"images/malum.jpg",
+					  "fructus":"images/fructus.jpg",
+					  "panis":"images/panis.jpg",
+					  "caro":"images/caro.jpg"
+				  },
+				  correctAnswers: [
+					  "caro"
+				  ]
+				},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Quid","quis"],[" ","NIL"],
+				  ["edis","edis"],["?","NIL"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "what{{'re| are} you eating| do you eat}{?|}"
+			  ]
+			},
+			{
+				instructions: "Translate the sentence",
+				question: [
+					["Quid","quis"],[" ","NIL"],
+					["editis","editis"],["?","NIL"]
+				  ],
+				type: "text",
+				correctAnswers: [
+					"what{{'re| are} you {all |}eating| do you {all |}eat}{?|}"
+				]
+			  },
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Nos","nos"],[" ","NIL"],
+				  ["mala","malum"],[" ", "NIL"],
+				  ["edimus","edimus"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				  "we {eat|are eating} {the |}apples"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Quid","quis"],[" ","NIL"],
+				  ["vos","vos"],[" ","NIL"],
+				  ["bibitis","est"],["?","NIL"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"what{{'re| are} you {all |}drinking| do you {all |}drink}{?|}"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Aquam","aqua"],[" ","NIL"],
+				  ["bibimus","bibimus"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"we {drink|are drinking} {the |}water"
+			  ]
+			},
+			{
+			  instructions: "Translate the sentence",
+			  question: [
+				  ["Carnem","caro"],[" ","NIL"],
+				  ["non","non"],
+				  ["edo","edo"]
+				],
+			  type: "text",
+			  correctAnswers: [
+				"I {don't eat|am not eating} {the |}meat"
 			  ]
 			}
 		  ]

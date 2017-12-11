@@ -160,5 +160,108 @@ const dictionary = {
 			english: [
 				"apple"
 			]
+		},
+		"cattus":{
+			dict: "cattus, -i (m)",
+			english: [
+				"cat"
+			]
+		},
+		"aqua":{
+			dict: "aqua, -ae (f)",
+			english: [
+				"water"
+			]
+		},
+		"canis":{
+			dict: "canis, -is (m/f)",
+			english: [
+				"dog"
+			]
+		},
+		"fructus":{
+			dict: "fructus, -us (m)",
+			english: [
+				"fruit",
+				"produce"
+			]
+		},
+		"panis":{
+			dict: "panis, -is (m)",
+			english: [
+				"bread",
+				"loaf"
+			]
+		},
+		"caro":{
+			dict: "caro, -nis (f)",
+			english: [
+				"meat",
+				"flesh"
+			]
+		},
+		"edo":{
+			dict: "edo, edere, edi, esum",
+			english: [
+				"eat",
+				"I eat",
+				"I am eating"
+			]
+		},
+		"edis":{
+			dict: "edo, edere, edi, esum",
+			english: [
+				"eat",
+				"you eat",
+				"you are eating"
+			]
+		},
+		"edimus":{
+			dict: "edo, edere, edi, esum",
+			english: [
+				"eat",
+				"we eat",
+				"we are eating"
+			]
+		},
+		"editis":{
+			dict: "edo, edere, edi, esum",
+			english: [
+				"eat",
+				"you all eat",
+				"you all are eating"
+			]
+		},
+		"bibit":{
+			dict: "bibo, bibere, bibi, bibitum",
+			english: [
+				"drinks",
+				"he/she/it drinks",
+				"he/she/it is drinking"
+			]
+		},
+		"bibitis":{
+			dict: "bibo, bibere, bibi, bibitum",
+			english: [
+				"drink",
+				"you all drink",
+				"you all are drinking"
+			]
+		},
+		"bibimus":{
+			dict: "bibo, bibere, bibi, bibitum",
+			english: [
+				"drink",
+				"we drink",
+				"we are drinking"
+			]
+		},
+		"bibunt":{
+			dict: "bibo, bibere, bibi, bibitum",
+			english: [
+				"drink",
+				"they drink",
+				"they are drinking"
+			]
 		}
 	};
