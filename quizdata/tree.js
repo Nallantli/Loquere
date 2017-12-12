@@ -12,8 +12,7 @@ var treeData = [
 		"newtier":true,
 		"color":"#ff2222",
 		"prerequisites":[
-			"cat0",
-			"NIL"
+			"cat0"
 		]
 	},
 	{
