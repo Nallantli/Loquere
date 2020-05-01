@@ -3,7 +3,7 @@
   "version": "",
   "dependencies": {
     "browserify": "^14.5.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "mongodb": "^3.0.0-rc0",
     "node-spintax": "^1.0.4",
     "spintax": "0.0.1"
